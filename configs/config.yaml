@@ -1,0 +1,11 @@
+seed: 42
+img_size: 32
+num_classes: 43
+batch_size: 64
+epochs: 30
+learning_rate: 0.001
+val_split: 0.2
+data_dir: data/raw
+model_path: models/tsr_cnn.keras
+tflite_path: models/tsr_cnn.tflite
+confusion_matrix_path: models/confusion_matrix.png

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.egg-info/
+data/raw/*
+!data/raw/.gitkeep
+models/*
+!models/.gitkeep
+!models/tsr_cnn.keras
+!models/tsr_cnn.tflite
+!models/confusion_matrix.png
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store
+Thumbs.db
+
