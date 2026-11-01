@@ -1,4 +1,5 @@
 """Web UI:  streamlit run apps/web_app.py"""
+
 import numpy as np
 import streamlit as st
 from PIL import Image

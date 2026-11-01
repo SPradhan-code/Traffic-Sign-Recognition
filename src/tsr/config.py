@@ -1,4 +1,5 @@
 """Configuration loading. All paths in the YAML are relative to the project root."""
+
 from pathlib import Path
 
 import yaml

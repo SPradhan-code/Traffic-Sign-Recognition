@@ -1,5 +1,6 @@
 """CNN architecture. Rescaling + augmentation live inside the model so that
 serving can never drift from training preprocessing."""
+
 from tensorflow import keras
 from tensorflow.keras import layers
 

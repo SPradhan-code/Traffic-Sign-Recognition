@@ -1,4 +1,5 @@
 """Inference core shared by the API, web app and webcam app."""
+
 import cv2
 import numpy as np
 from tensorflow import keras

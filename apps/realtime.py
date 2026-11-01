@@ -1,5 +1,6 @@
 """Webcam demo:  python apps/realtime.py [--camera 0] [--threshold 0.8]
 Hold a sign inside the green box. Press q to quit."""
+
 import argparse
 
 import cv2
