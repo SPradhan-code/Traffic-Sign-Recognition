@@ -1,13 +1,22 @@
 """REST API:  uvicorn apps.api:app --reload   (docs at /docs)"""
 import os
+import sys
 from functools import lru_cache
+from pathlib import Path
 
-import cv2
-import numpy as np
-from fastapi import FastAPI, File, HTTPException, UploadFile
+# Ensure project root and src/ are in sys.path
+_ROOT = Path(__file__).resolve().parent.parent
+_SRC = _ROOT / "src"
+for _p in (str(_ROOT), str(_SRC)):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
 
-from tsr.config import load_config
-from tsr.predictor import Predictor
+import cv2  # noqa: E402
+import numpy as np  # noqa: E402
+from fastapi import FastAPI, File, HTTPException, UploadFile  # noqa: E402
+
+from tsr.config import load_config  # noqa: E402
+from tsr.predictor import Predictor  # noqa: E402
 
 app = FastAPI(title="Traffic Sign Recognition API", version="1.0.0")
 MAX_BYTES = 5 * 1024 * 1024

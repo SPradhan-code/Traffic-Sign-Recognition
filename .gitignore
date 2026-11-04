@@ -8,9 +8,11 @@ models/*
 !models/tsr_cnn.keras
 !models/tsr_cnn.tflite
 !models/confusion_matrix.png
+*.keras
+!models/*.keras
+*.h5
 .pytest_cache/
 .ipynb_checkpoints/
 *.pyc
 .DS_Store
 Thumbs.db
-
